@@ -1,1 +1,35 @@
 // Mixins Here
+.position(@width, @height, @margin,  @padding){
+  width: @width;
+  height: @height;
+  margin: @margin;
+  padding: @padding;
+}
+
+.this-display(@disp, @direction, @wrap, @justify, @align){
+        display: @disp;
+        flex-direction: @direction;
+        flex-wrap: @wrap;
+        justify-content: @justify;
+        align-items: @align;
+}
+
+.nav-link(){
+  text-decoration:none;
+  color:@nav-font;
+  font-size: 1.6rem;
+  font-weight:600;
+}
+
+.nav-section(){
+  background-color: @nav-bg;
+  color: @nav-font;
+  border-color: @nav-border;
+}
+
+.btn-style(){
+  font-size:2rem;
+  background-color: @btn-bg-color;
+  color: white;
+  border-radius: 10%;
+}
