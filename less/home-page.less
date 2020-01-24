@@ -59,9 +59,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      .this-display(flex, column-reverse, nowrap, space-between, center);
+      width:100%;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -85,6 +92,9 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        width: 100%;
+      }
 
       img {
         width: 100%;
